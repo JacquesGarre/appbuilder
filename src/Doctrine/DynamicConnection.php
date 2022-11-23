@@ -32,9 +32,6 @@ class DynamicConnection extends Connection
         $params = $this->getParams();
         if ($this->isConnected())
             $this->close();
-
-            $this->getParameter('app.paramname');
-
         $params['url'] = "mysql://".$user.":".$password."@".$host.":".$port."/".$dbName;
         $params['host'] = $host;
         $params['port'] = $port;
